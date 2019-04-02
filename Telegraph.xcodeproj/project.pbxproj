@@ -771,6 +771,8 @@
 		09FCB6921FB2E98C0007D2CA /* PasswordPlaceholderIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09FCB6901FB2E98B0007D2CA /* PasswordPlaceholderIcon@2x.png */; };
 		09FCB6951FB2FAE80007D2CA /* PasscodePlaceholderIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09FCB6931FB2FAE60007D2CA /* PasscodePlaceholderIcon@2x.png */; };
 		09FCB6961FB2FAE80007D2CA /* PasscodePlaceholderIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09FCB6941FB2FAE70007D2CA /* PasscodePlaceholderIcon@3x.png */; };
+		245559372253D79E00CBFD4F /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 245559292253D79E00CBFD4F /* config.h */; };
+		245559382253D79E00CBFD4F /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 245559292253D79E00CBFD4F /* config.h */; };
 		6801D6681BEF6CC600533783 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08805C9156E8F5100311537 /* AddressBook.framework */; };
 		6804D8AE1D1D624E0082E71F /* TGGifGalleryAddAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6804D8AC1D1D624E0082E71F /* TGGifGalleryAddAccessoryView.h */; };
 		6804D8AF1D1D624E0082E71F /* TGGifGalleryAddAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6804D8AD1D1D624E0082E71F /* TGGifGalleryAddAccessoryView.m */; };
@@ -5966,6 +5968,7 @@
 		09FCB6901FB2E98B0007D2CA /* PasswordPlaceholderIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PasswordPlaceholderIcon@2x.png"; path = "Resources/PasswordPlaceholderIcon@2x.png"; sourceTree = "<group>"; };
 		09FCB6931FB2FAE60007D2CA /* PasscodePlaceholderIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PasscodePlaceholderIcon@2x.png"; path = "Resources/PasscodePlaceholderIcon@2x.png"; sourceTree = "<group>"; };
 		09FCB6941FB2FAE70007D2CA /* PasscodePlaceholderIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PasscodePlaceholderIcon@3x.png"; path = "Resources/PasscodePlaceholderIcon@3x.png"; sourceTree = "<group>"; };
+		245559292253D79E00CBFD4F /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = thirdparty/RMIntro/core/config.h; sourceTree = "<group>"; };
 		6803268D1D5D74FF0062725B /* TGPhotoPaintSettingsWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPhotoPaintSettingsWrapperView.h; sourceTree = "<group>"; };
 		6803268E1D5D74FF0062725B /* TGPhotoPaintSettingsWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPhotoPaintSettingsWrapperView.m; sourceTree = "<group>"; };
 		680326911D5DFC640062725B /* TGPaintingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPaintingData.h; sourceTree = "<group>"; };
@@ -19965,6 +19968,7 @@
 		D08805A1156E8F3600311537 = {
 			isa = PBXGroup;
 			children = (
+				245559292253D79E00CBFD4F /* config.h */,
 				D0B9B19419CA324D0020C9CF /* LaunchScreen.xib */,
 				D0DAA484197496240036E709 /* Icon-76.png */,
 				D0C6748E1CB8640400183765 /* Icon-167.png */,
@@ -24049,6 +24053,7 @@
 				D01161761F41F1330039383E /* NSArray_ShippingOption.h in Headers */,
 				68B63D761BB25B8D00205AC3 /* TGChatListSignals.h in Headers */,
 				D0115EDE1F41F12F0039383E /* TLPostAddress.h in Headers */,
+				245559372253D79E00CBFD4F /* config.h in Headers */,
 				D0115E9E1F41F12F0039383E /* TLMsgsStateInfo.h in Headers */,
 				D04324F21DC3718600E0C528 /* TGInstantPageDisplayView.h in Headers */,
 				D07587641B3B226600117DFF /* TGAudioSessionManager.h in Headers */,
@@ -24709,6 +24714,7 @@
 				D020FBCA1D9972D300F279AA /* TGSearchSignals.h in Headers */,
 				D020FB611D996D5200F279AA /* PSData.h in Headers */,
 				D020FB631D996D5200F279AA /* PSKeyValueStore.h in Headers */,
+				245559382253D79E00CBFD4F /* config.h in Headers */,
 				D020FB5F1D996D5200F279AA /* PSLMDBKeyValueReaderWriter.h in Headers */,
 				D020FB8F1D99711800F279AA /* TGPeerId.h in Headers */,
 				D020FB7E1D996E4800F279AA /* TGDatacenterConnectionContext.h in Headers */,
@@ -24970,6 +24976,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				"ru-RU",
 				ru,
