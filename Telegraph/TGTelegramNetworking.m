@@ -50,7 +50,7 @@
 
 #import "TLRPCauth_sendCode.h"
 
-#import "../../config.h"
+#import "config.h"
 
 #import "TGAccountSignals.h"
 

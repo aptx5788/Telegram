@@ -1,6 +1,6 @@
 #import "TGAppDelegate.h"
 
-#import "../../config.h"
+#import "config.h"
 #import <LegacyComponents/LegacyComponents.h>
 
 #import "TGLegacyComponentsGlobalsProvider.h"
