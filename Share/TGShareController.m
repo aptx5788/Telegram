@@ -717,7 +717,7 @@ static void set_bits(uint8_t *bytes, int32_t bitOffset, int32_t numBits, int32_t
 }
 
 #pragma mark -
-
+// 分享动画标识
 - (void)animateAppearance
 {
     self.view.alpha = 1.0f;
