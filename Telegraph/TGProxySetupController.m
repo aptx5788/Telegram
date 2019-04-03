@@ -332,7 +332,7 @@
     
     __weak TGProxySetupController *weakSelf = self;
     TGProxyDetailsController *controller = [[TGProxyDetailsController alloc] initWithProxy:nil];
-    controller.completionBlock = ^(TGProxyItem *proxy)
+    controller.detailCompletionBlock = ^(TGProxyItem *proxy)
     {
         __strong TGProxySetupController *strongSelf = weakSelf;
         if (strongSelf != nil)
@@ -400,7 +400,7 @@
 {
     __weak TGProxySetupController *weakSelf = self;
     TGProxyDetailsController *controller = [[TGProxyDetailsController alloc] initWithProxy:proxy];
-    controller.completionBlock = ^(TGProxyItem *newProxy)
+    controller.detailCompletionBlock = ^(TGProxyItem *newProxy)
     {
         __strong TGProxySetupController *strongSelf = weakSelf;
         if (strongSelf != nil)

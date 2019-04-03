@@ -63,4 +63,9 @@
     return true;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"server:%@\n port:%d\n username:%@\n password:%@\n secret:%@\n isMTProxy:%d\n",self.server,self.port, self.username, self.password, self.secret,self.isMTProxy];
+}
+
 @end

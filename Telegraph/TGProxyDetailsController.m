@@ -246,8 +246,8 @@
     else
         [self.presentingViewController dismissViewControllerAnimated:true completion:nil];
 
-    if (self.completionBlock != nil)
-        self.completionBlock([[TGProxyItem alloc] initWithServer:_addressItem.username port:(uint16_t)[_portItem.username intValue] username:_usernameItem.username password:_passwordItem.username secret:_secretItem.username]);
+    if (self.detailCompletionBlock != nil)
+        self.detailCompletionBlock([[TGProxyItem alloc] initWithServer:_addressItem.username port:(uint16_t)[_portItem.username intValue] username:_usernameItem.username password:_passwordItem.username secret:_secretItem.username]);
 }
 
 - (void)checkInputValues {

@@ -4,7 +4,7 @@
 
 @interface TGProxyDetailsController : TGCollectionMenuController
 
-@property (nonatomic, copy) void (^completionBlock)(TGProxyItem *);
+@property (nonatomic, copy) void (^detailCompletionBlock)(TGProxyItem *);
 
 - (instancetype)initWithProxy:(TGProxyItem *)proxy;
 

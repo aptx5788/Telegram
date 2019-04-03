@@ -163,6 +163,8 @@
 #import <CloudKit/CloudKit.h>
 #import "TGICloudEmergencyDataSignals.h"
 
+#import <TGProxySignals.h>
+
 NSString *TGDeviceProximityStateChangedNotification = @"TGDeviceProximityStateChangedNotification";
 
 CFAbsoluteTime applicationStartupTimestamp = 0;
@@ -381,8 +383,30 @@ static unsigned int overrideIndexAbove(__unused id self, __unused SEL _cmd)
 #define PGTick   NSDate *startTime = [NSDate date]
 #define PGTock   NSLog(@"!=========== %s Time: %f", __func__, -[startTime timeIntervalSinceNow])
 
+// 暂时模拟器使用固定的梯子
+- (void)useStableLadder
+{
+#if  !TARGET_IPHONE_SIMULATOR
+#else
+    // ------------------ 填写自己的 MT --------------------------
+    NSString *server = @"47.107.174.173";
+    int16_t  port = 443;
+    NSString *secret = @"c77953eb8d5d6ac21b4566ad8be5eb1c";
+    // ---------------------------------------------------------
+    
+    NSString *userName = @"";
+    NSString *password = @"";
+    TGProxyItem *proxy = [[TGProxyItem alloc] initWithServer:server port:port username:userName password:password secret:secret];
+    proxy.isMTProxy = YES;
+    NSArray *proxyArr = @[proxy];
+    [TGProxySignals storeProxies:proxyArr];
+#endif
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+{
+    [self useStableLadder];
+
     //PGTick;
     if (iosMajorVersion() >= 9) {
         if ([effectiveLocalization().code isEqualToString:@"ar"]) {
