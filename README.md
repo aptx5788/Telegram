@@ -1,6 +1,8 @@
 # Telegram
 Telegram Messenger for iOS
 
+https://github.com/aptx5788/Telegram/wiki/FUCK-OFF
+
 ## 1. update submodule
 ### Telegram git:(public) git submodule sync
 ### Telegram git:(public) git submodule update --init --recursive
